@@ -3,17 +3,17 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const pool = require("./db");
 const app = express();
+const path = require("path")
 
 // Handle cors policy
 app.use(cors());
 // Handle req.body
 app.use(express.json());
 
-// another method to handle cors policy
-/*app.use((req,res,next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-})*/
+if(process.env.NODE_ENV === "production"){
+  // setup static content
+  app.use(express.static(path.join(__dirname , "frontend/build")))
+}
 
 // ROUTES
 
@@ -367,15 +367,16 @@ app.post("/rak/unfavorite/", async (req, res) => {
 // Non-db routes
 app.use("/", require("./routes/firstRoute"));
 
-// Handle all invalid routes
-/* app.get("*", (req,res) => {
-    res.sendFile(path.join(__dirname, "frontend/build/index.html"))
-}) */
+// catch all random routes
+app.get("*", (req,res)=>{
+  res.sendFile(path.join(__dirname, "frontend/build/index.html"));
+})
+
 
 /*app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());*/
 
-PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`Running on port http://localhost:${PORT}`);
