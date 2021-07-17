@@ -30,7 +30,7 @@ function Copyright() {
     <Typography variant="body2" className={classes.typography}>
       {"Copyright © "}
       <Link color="inherit" href="/">
-        Kin NG
+        AnimeRak
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -46,7 +46,7 @@ const Footer = () => {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Typography variant="body1" className={classes.typography}>
-            Built using Kitsu anime API
+           Built using PERN stack and Kitsu anime API
           </Typography>
           <Copyright />
         </Container>
