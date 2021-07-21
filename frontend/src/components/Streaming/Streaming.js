@@ -26,7 +26,10 @@ const Streaming = () => {
   const getStreamingPlatforms = async () => {
     const fetchStreaming = await fetch("https://kitsu.io/api/edge/streamers");
     const parseResponse = await fetchStreaming.json();
-    setStreamingPlatforms(parseResponse.data);
+    const data = parseResponse.data;
+    setStreamingPlatforms(
+      data.filter((streamer) => streamer.attributes.siteName !== "YouTube")
+    );
     setLoading(false);
   };
 
