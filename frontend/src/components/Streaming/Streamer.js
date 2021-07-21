@@ -27,7 +27,8 @@ export const Streamer = ({ streamerName, seriesLinks }) => {
     image =
       "https://applexgen.com/wp-content/uploads/2019/12/Cancel-Crunchyroll-Subscription-1.jpg";
   } else if (streamerName === "CONtv") {
-    image = "https://iptvinsider.com/wp-content/uploads/2017/03/contv_logo.jpg";
+    image =
+      "https://media.comicbook.com/uploads1/2014/12/contv-phs2-logo43c-r13-wht-115204-1280x0.jpg";
   } else if (streamerName === "Netflix") {
     image =
       "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/641/article_full%401x.jpg";
