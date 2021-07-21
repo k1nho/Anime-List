@@ -17,3 +17,7 @@ Users are able to add any anime available in the system to their favorites list.
 ### Rental system
 
 The rental route allows users to rent any of the three formats offered in the store being blu-ray, dvd, and digital. Once an anime is rented, the total balance will be displayed on the private route.
+
+### Streaming system
+
+The streaming routes displays links to anime provided by an specific streaming service (Hulu, Crunchyroll, Funimation, ect).
