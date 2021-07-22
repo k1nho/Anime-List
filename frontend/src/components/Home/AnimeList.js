@@ -30,7 +30,12 @@ const Anime = ({ auth }) => {
   useEffect(() => {
     setLoading(true);
     const fetchAnime = async () => {
-      const data = await fetch(`/rak/${filter}`);
+      const data = await fetch(`/rak/${filter}`, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      });
       const animeData = await data.json();
       setLoading(false);
       setAnime(animeData);
