@@ -8,9 +8,9 @@
     "npm": "6.14.6"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "heroku-postbuild": "cd frontend && npm install && npm run build",
-    "server": "nodemon server.js",
+    "server": "nodemon index.js",
     "client": "npm start --prefix../frontend",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\\"
   },
