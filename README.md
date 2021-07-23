@@ -20,4 +20,4 @@ The rental route allows users to rent any of the three formats offered in the st
 
 ### Streaming system
 
-The streaming routes displays links to anime provided by an specific streaming service (Hulu, Crunchyroll, Funimation, ect).
+The streaming route displays links to anime provided by an specific streaming service (Hulu, Crunchyroll, Funimation, ect).
