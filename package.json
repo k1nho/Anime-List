@@ -26,7 +26,11 @@
     "express": "^4.17.1",
     "heroku": "^7.56.1",
     "jsonwebtoken": "^8.5.1",
-    "pg": "^8.6.0"
+    "lodash": "^4.17.21",
+    "node-forge": "^0.10.0",
+    "node-notifier": "^10.0.0",
+    "pg": "^8.6.0",
+    "printf": "^0.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
