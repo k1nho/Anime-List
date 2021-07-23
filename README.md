@@ -4,7 +4,7 @@
 
 ### Anime Series Filtering
 
-Anime series can be filtered by 5 different categories: ranking, alphabet, higher cost, and lower cost.
+Anime series can be filtered by 4 different categories: ranking, alphabet, higher cost, and lower cost.
 
 ### User Authentication
 
