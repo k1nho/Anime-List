@@ -3,16 +3,16 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const pool = require("./db");
 const app = express();
-const path = require("path")
+const path = require("path");
 
 // Handle cors policy
 app.use(cors());
 // Handle req.body
 app.use(express.json());
 
-if(process.env.NODE_ENV === "production"){
+if (process.env.NODE_ENV === "production") {
   // setup static content
-  app.use(express.static(path.join(__dirname , "frontend/build")))
+  app.use(express.static(path.join(__dirname, "frontend/build")));
 }
 
 // ROUTES
@@ -368,10 +368,9 @@ app.post("/rak/unfavorite/", async (req, res) => {
 app.use("/", require("./routes/firstRoute"));
 
 // catch all random routes
-app.get("*", (req,res)=>{
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "frontend/build/index.html"));
-})
-
+});
 
 /*app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());*/
