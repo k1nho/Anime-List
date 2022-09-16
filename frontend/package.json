@@ -1,0 +1,68 @@
+{
+  "name": "animelist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "ansi-html": "0.0.7",
+    "ansi-regex": "^6.0.1",
+    "browserslist": "^4.19.1",
+    "color-string": "^1.9.0",
+    "dns-packet": "^5.3.1",
+    "follow-redirects": "^1.14.7",
+    "formik": "^2.2.9",
+    "framer-motion": "^3.10.6",
+    "glob-parent": "^6.0.2",
+    "hosted-git-info": "^4.1.0",
+    "immer": "^9.0.12",
+    "is-svg": "^4.3.2",
+    "json-schema": "^0.4.0",
+    "lodash": "^4.17.21",
+    "nth-check": "^2.0.1",
+    "path-parse": "^1.0.7",
+    "postcss": "^8.4.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.1",
+    "react-toastify": "^7.0.4",
+    "ssri": "^8.0.1",
+    "styled-components": "^5.3.3",
+    "tar": "^6.1.11",
+    "tmpl": "^1.0.5",
+    "url-parse": "^1.5.4",
+    "web-vitals": "^0.2.4",
+    "ws": "^8.4.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001/",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
